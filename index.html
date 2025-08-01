@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureHealth & Medicine - Bangladesh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <h1>SecureHealth & Medicine</h1>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#diseases">Medicines</a></li>
+                <li><a href="#emergency">Emergency</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#cart">Cart <i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+            
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search medicines or diseases...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Your Health, Our Priority</h2>
+            <p>Find the right medicine for your symptoms, connect with specialists, and get emergency help when you need it most.</p>
+            <a href="#diseases" class="btn">Find Medicine</a>
+            <a href="#emergency" class="btn btn-accent">Emergency Services</a>
+        </div>
+    </section>
+
+    <!-- Diseases & Medicines Section -->
+    <section id="diseases" class="container">
+        <h2 class="section-title">Medicines by Disease & Age</h2>
+        <p class="section-subtitle">
+            Select your condition and age group to find recommended medicines. All prices in Bangladeshi Taka (৳).
+        </p>
+        
+        <div class="disease-container">
+            <!-- Fever Card -->
+            <div class="disease-card">
+                <div class="disease-header">
+                    <h3>Fever</h3>
+                    <p>Reduce high body temperature</p>
+                </div>
+                <div class="disease-body">
+                    <div class="age-group">
+                        <h4><i class="fas fa-user"></i> For Adults</h4>
+                        <div class="medicines">
+                            <div class="medicine" data-name="Napa" data-price="8">Napa (500mg) <span>৳8</span></div>
+                            <div class="medicine" data-name="Ace" data-price="10">Ace (500mg) <span>৳10</span></div>
+                            <div class="medicine" data-name="Paracip" data-price="15">Paracip (500mg) <span>৳15</span></div>
+                        </div>
+                        <button class="add-to-cart" data-disease="Fever" data-age="Adult"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="age-group">
+                        <h4><i class="fas fa-child"></i> For Children</h4>
+                        <div class="medicines">
+                            <div class="medicine" data-name="Piriton" data-price="55">Piriton Syrup <span>৳55</span></div>
+                            <div class="medicine" data-name="Napa Junior" data-price="35">Napa Junior <span>৳35</span></div>
+                            <div class="medicine" data-name="T-98" data-price="60">T-98 Syrup <span>৳60</span></div>
+                        </div>
+                        <button class="add-to-cart" data-disease="Fever" data-age="Child"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cough Card -->
+            <div class="disease-card">
+                <div class="disease-header">
+                    <h3>Cough</h3>
+                    <p>Relieve cough and throat irritation</p>
+                </div>
+                <div class="disease-body">
+                    <div class="age-group">
+                        <h4><i class="fas fa-user"></i> For Adults</h4>
+                        <div class="medicines">
+                            <div class="medicine" data-name="Tuska" data-price="15">Tuska <span>৳15</span></div>
+                            <div class="medicine" data-name="Bro-Zedex" data-price="70">Bro-Zedex <span>৳70</span></div>
+                            <div class="medicine" data-name="Cofnil" data-price="25">Cofnil <span>৳25</span></div>
+                        </div>
+                        <button class="add-to-cart" data-disease="Cough" data-age="Adult"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="age-group">
+                        <h4><i class="fas fa-child"></i> For Children</h4>
+                        <div class="medicines">
+                            <div class="medicine" data-name="Tixylix" data-price="65">Tixylix <span>৳65</span></div>
+                            <div class="medicine" data-name="Benadryl" data-price="75">Benadryl <span>৳75</span></div>
+                            <div class="medicine" data-name="Cofnil Junior" data-price="45">Cofnil Junior <span>৳45</span></div>
+                        </div>
+                        <button class="add-to-cart" data-disease="Cough" data-age="Child"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Headache Card -->
+            <div class="disease-card">
+                <div class="disease-header">
+                    <h3>Headache</h3>
+                    <p>Relieve tension and migraine headaches</p>
+                </div>
+                <div class="disease-body">
+                    <div class="age-group">
+                        <h4><i class="fas fa-user"></i> For Adults</h4>
+                        <div class="medicines">
+                            <div class="medicine" data-name="Ace Plus" data-price="12">Ace Plus <span>৳12</span></div>
+                            <div class="medicine" data-name="Maxpro" data-price="25">Maxpro <span>৳25</span></div>
+                            <div class="medicine" data-name="Migranil" data-price="35">Migranil <span>৳35</span></div>
+                        </div>
+                        <button class="add-to-cart" data-disease="Headache" data-age="Adult"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="age-group">
+                        <h4><i class="fas fa-child"></i> For Children</h4>
+                        <div class="medicines">
+                            <div class="medicine" data-name="Calpol" data-price="40">Calpol <span>৳40</span></div>
+                            <div class="medicine" data-name="Nimulid" data-price="45">Nimulid <span>৳45</span></div>
+                            <div class="medicine" data-name="Pediaphen" data-price="35">Pediaphen <span>৳35</span></div>
+                        </div>
+                        <button class="add-to-cart" data-disease="Headache" data-age="Child"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Section -->
+    <section id="emergency" class="container">
+        <div class="emergency-container">
+            <div class="emergency-content">
+                <h2><i class="fas fa-ambulance"></i> Emergency Services</h2>
+                <p class="emergency-subtitle">
+                    In case of medical emergency, call 999 immediately. Below are hospitals in Dhaka and Chittagong.
+                </p>
+                
+                <a href="tel:999" class="btn emergency-btn"><i class="fas fa-phone-alt"></i> DIAL 999 NOW</a>
+                
+                <div class="hospitals">
+                    <!-- Dhaka Hospitals -->
+                    <div class="hospital-card">
+                        <h3><i class="fas fa-hospital"></i> Dhaka Medical College Hospital</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Bakshibazar, Dhaka</p>
+                        <p><i class="fas fa-phone"></i> Hotline: 1999</p>
+                        <p><i class="fas fa-clock"></i> 24/7 Emergency Department</p>
+                    </div>
+                    
+                    <div class="hospital-card">
+                        <h3><i class="fas fa-hospital"></i> Square Hospital</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Panthapath, Dhaka</p>
+                        <p><i class="fas fa-phone"></i> Hotline: 10616</p>
+                        <p><i class="fas fa-clock"></i> 24/7 Emergency Department</p>
+                    </div>
+                    
+                    <!-- Chittagong Hospitals -->
+                    <div class="hospital-card">
+                        <h3><i class="fas fa-hospital"></i> Chittagong Medical College Hospital</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> K.B. Fazlul Kader Road, Chittagong</p>
+                        <p><i class="fas fa-phone"></i> Hotline: 031-632531</p>
+                        <p><i class="fas fa-clock"></i> 24/7 Emergency Department</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialist Doctors Section -->
+    <section id="doctors" class="container">
+        <h2 class="section-title">Bangladeshi Specialist Doctors</h2>
+        <p class="section-subtitle">
+            Connect with top specialists in Dhaka and Chittagong.
+        </p>
+        
+        <div class="doctors-container">
+            <div class="doctor-card">
+                <div class="doctor-img" style="background-image: url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="doctor-info">
+                    <h3>Dr. A.B.M. Abdullah</h3>
+                    <div class="specialty">Medicine Specialist</div>
+                    <p>Professor at Bangabandhu Sheikh Mujib Medical University, Dhaka</p>
+                    <div class="contact-info">
+                        <div><i class="fas fa-phone"></i> 01713-001122</div>
+                        <div><i class="fas fa-envelope"></i> dr.abdullah@bsmmu.edu.bd</div>
+                        <div><i class="fas fa-map-marker-alt"></i> BSMMU, Shahbag, Dhaka</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="doctor-card">
+                <div class="doctor-img" style="background-image: url('https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="doctor-info">
+                    <h3>Dr. Syed Modasser Ali</h3>
+                    <div class="specialty">Eye Specialist</div>
+                    <p>Chairman, Ibn Sina Hospital, Dhanmondi, Dhaka</p>
+                    <div class="contact-info">
+                        <div><i class="fas fa-phone"></i> 01755-667788</div>
+                        <div><i class="fas fa-envelope"></i> modasser@ibnsina.com</div>
+                        <div><i class="fas fa-map-marker-alt"></i> Ibn Sina Hospital, Dhaka</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="doctor-card">
+                <div class="doctor-img" style="background-image: url('https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="doctor-info">
+                    <h3>Dr. Farhana Dewan</h3>
+                    <div class="specialty">Pediatrician</div>
+                    <p>Chittagong Medical College Hospital</p>
+                    <div class="contact-info">
+                        <div><i class="fas fa-phone"></i> 01819-998877</div>
+                        <div><i class="fas fa-envelope"></i> fdewan@cmch.gov.bd</div>
+                        <div><i class="fas fa-map-marker-alt"></i> CMCH, Chittagong</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">Total: ৳0.00</div>
+            <button id="checkout-btn" class="btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>SecureHealth & Medicine is your trusted healthcare partner in Bangladesh, providing access to quality medicines, emergency services, and specialist doctors.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#diseases">Medicines</a></li>
+                        <li><a href="#emergency">Emergency Services</a></li>
+                        <li><a href="#doctors">Find a Doctor</a></li>
+                        <li><a href="#cart">My Account</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 1675/A Mehedibag Road, Chattogram 4000, Bangladesh</li>
+                        <li><i class="fas fa-phone"></i> +880 1853-481024 </li>
+                        <li><i class="fas fa-envelope"></i> info@securehealth-bd.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 SecureHealth & Medicine Bangladesh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
